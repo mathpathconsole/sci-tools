@@ -2,11 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import mpl_toolkits.mplot3d.axes3d as axes3d
 
-#Reşat Berk --stars of the sky
-#*spherical coordinates referance -https://stackoverflow.com/questions/36816537/spherical-coordinates-plot-in-matplotlib gidiniz
 #*spherical harmonics referance: "intro to quantum mechanics 2nd edition, David J. Griffiths, page 139, table of a few spherical harmonics"
-
-#*** for run create lib numpy and matplotlib
 
 #on spherical coordinates theta,phi angles 0->pi, 0->2pi) 
 theta, phi = np.linspace(0, np.pi, 40), np.linspace(0, 2*np.pi, 40)
@@ -17,7 +13,7 @@ def y(l,m):
     if l==3 and m==3:
         r1=(np.sqrt(35/(64*np.pi))*(np.sin(theta)**3)*(np.exp(3*np.imag(1)*phi)))
         r2=(np.sqrt(35/(64*np.pi))*(np.sin(theta)**3)*(np.exp(-3*np.imag(1)*phi)))
-        R=r1*r2 #attention these are imaginer number
+        R=r1*r2 #----------attention these are imaginer number
     elif l==3 and m==2:
         r1=(np.sqrt(105/(32*np.pi))*(np.sin(theta)**2)*(np.cos(theta))*(np.exp(2*np.imag(1)*phi)))
         r2=(np.sqrt(105/(32*np.pi))*(np.sin(theta)**2)*(np.cos(theta))*(np.exp(-2*np.imag(1)*phi)))
@@ -54,9 +50,8 @@ defineted harmonics:
 'y(3,0)' , 'y(3,1)' , 'y(3,2)' , 'y(3,3)'}
 *intro to quantum physics 2nd edition, David J. Griffiths, page 139, table of a few spherical harmonics
 
----Reşat Berk // Stars of the sky---""")
-    
-           
+---Reşat Berk | Stars of the sky---""")
+          
     X = R * np.sin(THETA) * np.cos(PHI) #x,y,z on spherical coordinates
     Y = R * np.sin(THETA) * np.sin(PHI)
     Z = R * np.cos(THETA)
@@ -67,5 +62,5 @@ defineted harmonics:
     linewidth=0, antialiased=False, alpha=0.5)
     
     plt.show()
-    
+y(3,2) #entry sample
 
