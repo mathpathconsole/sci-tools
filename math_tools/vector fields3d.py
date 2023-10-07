@@ -1,7 +1,7 @@
+#ReşatBerk
 from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
 import numpy as np
-
 
 fig = plt.figure()
 ax = fig.gca(projection='3d')
@@ -18,5 +18,3 @@ ax.quiver(x, y, z, u, v, w, length=0.4, color = 'blue')
 
 plt.show()
 
-
-#2d kaynakla aynı yapı
