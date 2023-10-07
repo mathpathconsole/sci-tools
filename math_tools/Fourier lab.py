@@ -7,30 +7,23 @@ a, b, c, d, e, f, g, h, i, j, k, l, m, n, p, r, s, t, u, v, x, y, z, nu, rho, ph
 init_printing(use_unicode=False)
 colorama.init()
 
-#sin(x)+sin(3*x)/3 + sin(5*x)/5... so , sin((2*n+1)*x)/(2*n+1)
-#c=Sum(sin(A*x)/A,(n,0,198)).doit()
-
-#                           *Reşat Berk tarafından oluşturulmuştur*
-print(Fore.YELLOW,20*" ","Trigonometrik toplam(Fourier Lab.)"," "*25)
+print(Fore.YELLOW,20*" ","Trigonometric Sum"," "*25)
 print(Style.RESET_ALL)
-print(""" Tanımalama işlemi basittir.
-#Tanım: f(x)=trigonometrik fonksiyon -> Sum(f(x*i),(i,sınır1,sınır2)
-basit bir şekilde python ile oluşturulmuştur.
-örnek: >>:Sum(f(n),(n,0,5)) yazdığımızda şöyle bir sonuç elde ederiz,
+print(""" You can define simply,
+#definition: f(x)=trigonometric function -> Sum(f(x*i),(i,limit1,limit2)
+
+Sample: >>:Sum(f(n),(n,0,5)) when typed, we display;
 
  _5_       
  \ `      
   )   f(n)   = f(0) + f(1) + f(2) + f(3) + f(4) + f(5)
  /_,      
 n = 0
-Dolayısıyla >>:Sum(f(i),(i,0,oo)) veya daha farklı işlemlerle işlemleri yaparız
-sırasıyla, Sum:toplam sembolüdür. ilk terim:ifademiz, virgülden sonraki
-(değişken,a,b) bizim değişkene göre sınırlarımızdır. ve buraya istediğimiz
-terimleri tanımlayabiliriz.
-üçgen dalga için örnek: >>:Sum(sin(n*x),(n,0,16))
-kare dalga için örnek: >>:Sum(sin((2*n+1)*x)/(2*n+1),(n,0,198))
+So, structure like this; f(n), (variable, limit1, limit2)
+Triangle wave sample: >>:Sum(sin(n*x),(n,0,16))
+Square wave sample: >>:Sum(sin((2*n+1)*x)/(2*n+1),(n,0,198))
 
-                            Stars of the Sky
+                            Stars of the Sky|Reşat Berk
 """)
 print(Style.RESET_ALL)
 print(Fore.CYAN)
@@ -44,6 +37,9 @@ while True:
     plot(c,show=False).show()
     print("")
 
+#libraries:
+#--colorama
+#--sympy
 
     
     
