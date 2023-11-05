@@ -1,5 +1,5 @@
-import pandas as pd
-import yfinance as yf
+import pandas as pd  #ReşatBerk -- requirements: pandas ver==1.5.3  and yfinance ver==0.2.12 
+import yfinance as yf                           #openpyxl ver== 3.1.2 and XlsxWriter ver==3.0.9
 from datetime import date  
 
 print('Connecting...')
