@@ -1,4 +1,4 @@
-#Argument: There is set like N = [a1, a2, a3, ... an) can you sort this set should be as a1 != a2 != a3 != a4 != an
+#Argument: There is set like N = [a1, a2, a3, ... an] can you sort this set should be as a1 != a2 != a3 != a4 != an
 #example = Numbers: 55221 -> 5,4,3,2,1
 
 #here is result. | Reşat Berk
